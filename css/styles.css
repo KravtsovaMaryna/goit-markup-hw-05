@@ -146,8 +146,21 @@ padding-bottom: 24px;
     color: #000;
     display: flex;
     align-items: center;
+    position: relative;
     
-}
+   }
+
+   /*Подчеркивание: обязательно content, чтоб было место для написания, ширина 100% ширины слова, высота в макете, bgc=цвет подчеркивания, закругление. Позиционируем слева отступ 0, опускаем НИЖЕ слова - значение с минусом, если подчеркнуть слово - bottom=0*/
+   .header-link.current::after {
+       content: '';
+       position: absolute;
+       width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    left: 0;
+    bottom: -27px;
+   }
 
 .header-soc-icon {
         margin-right: 10px;
@@ -654,6 +667,11 @@ color: var(--main-color);
     background-color: rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
+    transition: opacity 250ms, visibility 250ms;
+}
+
+.backdrop.is-hidden .modal {
+transform: translate(0) scale(0) rotate(180deg);
 }
 
 .modal {
@@ -664,7 +682,8 @@ color: var(--main-color);
     position: absolute;
     top: 221px;
     left: 50%;
-    transform: translate(-50% -50%);
+    transform: translate(-50% -50%) scale(1) rotate(0);
+    transition: transform 250ms;
 }
 
 .modal-close-btn {
