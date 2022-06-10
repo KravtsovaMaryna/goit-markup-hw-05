@@ -147,6 +147,9 @@ padding-bottom: 24px;
     display: flex;
     align-items: center;
     position: relative;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
    }
 
@@ -225,6 +228,9 @@ line-height: 1.87;
 text-align: center;
 letter-spacing: 0.06em;
 color: #FFFFFF;
+transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
         
 .hero-btn:hover {
@@ -411,6 +417,10 @@ margin-bottom: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .masters-soc-icon {
@@ -468,6 +478,10 @@ color: var(--title-color);
     fill: var(--icons-color);
     border: 1px solid var(--icons-color);
     border-radius: 4px;
+
+    transition-property: fill, background-color,  border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
     /*як додати ховер і фокус на бордер?*/
 }
@@ -508,6 +522,10 @@ font-size: 14px;
 line-height: 1.71;
 color: #FFFFFF;
 font-style: normal;
+
+transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-item:not(:last-child){
@@ -516,6 +534,10 @@ font-style: normal;
  
 .link-color {
 color: var(--main-color);
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-item:hover, .address-item:focus,
@@ -554,6 +576,10 @@ color: var(--title-color);
 padding: 6px 22px;
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
+
+transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .roster-btn:hover, .roster-btn:focus {
@@ -577,6 +603,7 @@ border-radius: 4px;
 .images-item {
     margin: 15px;
     flex-basis: calc(100% / 3 - 30px);
+    
 }
 
 .images-item:hover .images-title-top {
@@ -668,6 +695,10 @@ color: var(--main-color);
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
      
 }
 
@@ -692,6 +723,10 @@ color: var(--main-color);
     position: fixed;
     top: 0;
     transition: opacity 250ms, visibility 250ms;
+   
+    transition-property: background-color;
+    transition-duration: 2500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
