@@ -307,7 +307,7 @@ margin-bottom: 50px;
 .activity-wrap {
     position: relative;
     overflow: hidden;
-    }
+}
 
 .activity-title-top {
     position: absolute;
@@ -316,6 +316,7 @@ margin-bottom: 50px;
     color: var(--focus-color);
     height: 100%;
     transform: translateY(77%);
+    width: 100%;
 
     font-family: 'Roboto';
     font-style: normal;
