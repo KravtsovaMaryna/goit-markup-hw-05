@@ -135,8 +135,9 @@ font-size: 14px;
 line-height: 1.19;
 letter-spacing: 0.02em;
 color: #2196F3;
-padding-top: 24px;
-padding-bottom: 24px;
+padding: 32px 0;
+/* padding-top: 24px;
+padding-bottom: 24px; */
 }
 
 .header-item:not(:last-child) {
@@ -162,7 +163,7 @@ padding-bottom: 24px;
     background-color: var(--accent-color);
     border-radius: 2px;
     left: 0;
-    bottom: -27px;
+    bottom: -32px;
    }
 
 .header-soc-icon {
@@ -722,11 +723,11 @@ color: var(--main-color);
     background-color: rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
-    transition: opacity 250ms, visibility 250ms;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
-    transition-property: background-color;
-    transition-duration: 2500ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-property: background-color; */
+    /* transition-duration: 2500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .backdrop.is-hidden .modal {
